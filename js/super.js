@@ -175,3 +175,11 @@ function qwq() {
     return judge;
 }
 // console.log(qwq())
+
+const o = new Chinese('z', 18);
+const h = new Human('a');
+
+console.log(o.__proto__.__proto__ === h.__proto__, '是否相等',
+    o.__proto__.__proto__.__proto__.__proto__,
+    h.__proto__.__proto__.__proto__,)
+console.log(Object.create(Human.prototype).__proto__ === Human.prototype)
