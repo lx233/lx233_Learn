@@ -1,9 +1,6 @@
 # lx233_Learn 接下来计划
 - 科里化。。 
 - 闭包
-- new操作符 ⭐⭐⭐
-- 手写call
-- 【手写reduce】
 - promise相关系列
 
 - 【emit 订阅发布】
@@ -13,6 +10,10 @@
 
 
 # 已经完成
+22.10.26 (5)
+- instanceof.js
+- call.js (bind/apply)
+- reduce.js 手写
 22.10.25 (4)
 - new.js 手写new捏
 - 04_Object.create.js 

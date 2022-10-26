@@ -1,3 +1,4 @@
+// a instanceof Object 是运算符，写函数是模拟这个操作
 function myInstanceof1(left, right) {
     if (!left) return false;
     left = left.__proto__;  // = Object.getPrototypeOf(proto);  [[prototype]]
@@ -11,7 +12,6 @@ function myInstanceof1(left, right) {
     }
     return false;
 }
-// a instanceof Object
 
 function myInstanceof2(left, right) {
     let proto = Object.getPrototypeOf(left), // 获取对象的原型
