@@ -1,0 +1,19 @@
+
+function myAny(arr) {
+    if (typeof arr[Symbol.iterator] != 'function') {
+        // error...
+    }
+    return new Promise((resolve, reject) => {
+        for (let i = 0; i < arr.length; i++) {
+            Promise.resolve(arr[i])
+                // arr[i]
+                .then((res) => {
+                    console.log('here???')
+                    resolve(res);
+                }).catch((err) => {
+                    console.log('her33333e???')
+                    reject(err)
+                })
+        }
+    })
+}
